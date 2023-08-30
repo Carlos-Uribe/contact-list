@@ -28,10 +28,9 @@ function agregarContacto(contactoNuevo) {
 }
 
 function eliminarContacto(contactoAEliminar) {
-  let nuevaLista = contactList.filter(
+  contactList = contactList.filter(
     (contacto) => contacto.id !== contactoAEliminar
   );
-  contactList = nuevaLista;
 }
 
 function actualizarContacto(contactoAActualizar) {
@@ -47,7 +46,7 @@ function actualizarContacto(contactoAActualizar) {
 }
 
 function imprimirListaDeContactos() {
-  console.table(contactList); // Utilizamos console.table() para imprimir la tabla
+  console.table(contactList);
 }
 
 let contactoNuevo = {
@@ -74,14 +73,13 @@ let contactoActualizado = {
   },
 };
 
-console.log(contactoNuevo.nombre);
+// Ejecutar funciones y mostrar resultados
+// agregarContacto(contactoNuevo);
+// eliminarContacto(2);
+// actualizarContacto(contactoActualizado);
+// imprimirListaDeContactos();
 
-eliminarContacto();
-
-//agregarContacto(contactoNuevo);
-
-//imprimirListaDeContactos();
-
-//actualizarContacto(contactoActualizado);
-
-console.log(contactList);
+agregarContacto(contactoNuevo);
+eliminarContacto(2);
+actualizarContacto(contactoActualizado);
+imprimirListaDeContactos();
