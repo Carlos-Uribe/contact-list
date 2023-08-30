@@ -73,12 +73,6 @@ let contactoActualizado = {
   },
 };
 
-// Ejecutar funciones y mostrar resultados
-// agregarContacto(contactoNuevo);
-// eliminarContacto(2);
-// actualizarContacto(contactoActualizado);
-// imprimirListaDeContactos();
-
 agregarContacto(contactoNuevo);
 eliminarContacto(2);
 actualizarContacto(contactoActualizado);
